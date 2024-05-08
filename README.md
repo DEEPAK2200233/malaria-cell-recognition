@@ -11,37 +11,12 @@ Malaria dataset of 27,558 cell images with an equal number of parasitized and un
 
 ![193736032-b5847f1f-f002-4edc-912a-eaf48444f1b0](https://github.com/etjabajasphin/malaria-cell-recognition/assets/119218812/3704a85a-de49-47ec-bce6-a6dabd2102de)
 
-## DESIGN STEPS
-### STEP 1:
-Import necessary libraries for data manipulation, visualization, and deep learning.
-### STEP 2:
-Set up TensorFlow session to dynamically allocate GPU memory and log device placement.
-### STEP 3:
-Define the directory paths for the dataset and inspect their contents.
-### STEP 4:
-Load sample images from both classes (infected and uninfected) for visualization.
-### STEP 5:
-Explore image dimensions and distributions in the dataset using seaborn.
-### STEP 6:
-Define the image shape and construct a sequential model using Keras.
-### STEP 7:
-Add convolutional and pooling layers to the model architecture.
-### STEP 8:
-Flatten the layer and add dense layers with activation functions.
-### STEP 9:
-Compile the model specifying loss function, optimizer, and evaluation metrics.
-### STEP 10:
-Configure image data augmentation using ImageDataGenerator.
-### STEP 11:
-Set batch size and generate training and testing data batches.
-### STEP 12:
-Train the model on the training data for a specified number of epochs.
-### STEP 13:
-Evaluate the model's performance on the test data and visualize training history.
-### STEP 14:
-Generate predictions on the test data and calculate classification metrics.
-### STEP 15:
-Use random image selection for inference and display the prediction result.
+## DESIGN STEPS- **Step 1:** We begin by importing the necessary Python libraries, including TensorFlow for deep learning, data preprocessing tools, and visualization libraries.
+- **Step 2:** To leverage the power of GPU acceleration, we configure TensorFlow to allow GPU processing, which can significantly speed up model training.
+- **Step 3:** We create an image generator that performs data augmentation, including rotation, shifting, rescaling, and flipping. Data augmentation enhances the model's ability to generalize and recognize malaria-infected cells in various orientations and conditions.
+- **Step 4:** We design a convolutional neural network (CNN) architecture consisting of convolutional layers, max-pooling layers, and fully connected layers. The model is compiled with appropriate loss and optimization functions.
+- **Step 5:** We split the dataset into training and testing sets, and then train the CNN model using the training data. The model learns to differentiate between parasitized and uninfected cells during this phase.
+- **Step 6:** We evaluate the trained model's performance using the testing data, generating a classification report and confusion matrix to assess accuracy and potential misclassifications.
 
 ## PROGRAM
 
