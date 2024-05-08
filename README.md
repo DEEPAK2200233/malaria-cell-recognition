@@ -34,9 +34,9 @@ Fit the model and predict the sample input.
 
 ## PROGRAM
 
-### Name: Ashwin Kumar S
+### Name: DEEPAK RAJ S
 
-### Register Number: 212222240013
+### Register Number: 212222240023
 
 ```
 # to share the GPU resources for multiple sessions
