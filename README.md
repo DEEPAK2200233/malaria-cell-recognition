@@ -12,25 +12,36 @@ Malaria dataset of 27,558 cell images with an equal number of parasitized and un
 ![193736032-b5847f1f-f002-4edc-912a-eaf48444f1b0](https://github.com/etjabajasphin/malaria-cell-recognition/assets/119218812/3704a85a-de49-47ec-bce6-a6dabd2102de)
 
 ## DESIGN STEPS
-
 ### STEP 1:
-Import tensorflow and preprocessing libraries
+Import necessary libraries for data manipulation, visualization, and deep learning.
 ### STEP 2:
-Download and load the dataset folder
+Set up TensorFlow session to dynamically allocate GPU memory and log device placement.
 ### STEP 3:
-Split the training and testing folders.
+Define the directory paths for the dataset and inspect their contents.
 ### STEP 4:
-Perform image data generation methods.
-### STEP-5:
-Build the convolutional neural network model
-### STEP-6:
-Train the model with the training data
-### STEP-7:
-Plot the performance plot
-### STEP-8:
-Evaluate the model with the testing data using probability prediction(uninfected-> prob>0.5,parasitized-> <=0.5)
-### STEP-9:
-Fit the model and predict the sample input.
+Load sample images from both classes (infected and uninfected) for visualization.
+### STEP 5:
+Explore image dimensions and distributions in the dataset using seaborn.
+### STEP 6:
+Define the image shape and construct a sequential model using Keras.
+### STEP 7:
+Add convolutional and pooling layers to the model architecture.
+### STEP 8:
+Flatten the layer and add dense layers with activation functions.
+### STEP 9:
+Compile the model specifying loss function, optimizer, and evaluation metrics.
+### STEP 10:
+Configure image data augmentation using ImageDataGenerator.
+### STEP 11:
+Set batch size and generate training and testing data batches.
+### STEP 12:
+Train the model on the training data for a specified number of epochs.
+### STEP 13:
+Evaluate the model's performance on the test data and visualize training history.
+### STEP 14:
+Generate predictions on the test data and calculate classification metrics.
+### STEP 15:
+Use random image selection for inference and display the prediction result.
 
 ## PROGRAM
 
