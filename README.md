@@ -11,7 +11,8 @@ Malaria dataset of 27,558 cell images with an equal number of parasitized and un
 
 ![193736032-b5847f1f-f002-4edc-912a-eaf48444f1b0](https://github.com/etjabajasphin/malaria-cell-recognition/assets/119218812/3704a85a-de49-47ec-bce6-a6dabd2102de)
 
-## DESIGN STEPS- **Step 1:** We begin by importing the necessary Python libraries, including TensorFlow for deep learning, data preprocessing tools, and visualization libraries.
+## DESIGN STEPS
+-**Step 1:** We begin by importing the necessary Python libraries, including TensorFlow for deep learning, data preprocessing tools, and visualization libraries.
 - **Step 2:** To leverage the power of GPU acceleration, we configure TensorFlow to allow GPU processing, which can significantly speed up model training.
 - **Step 3:** We create an image generator that performs data augmentation, including rotation, shifting, rescaling, and flipping. Data augmentation enhances the model's ability to generalize and recognize malaria-infected cells in various orientations and conditions.
 - **Step 4:** We design a convolutional neural network (CNN) architecture consisting of convolutional layers, max-pooling layers, and fully connected layers. The model is compiled with appropriate loss and optimization functions.
